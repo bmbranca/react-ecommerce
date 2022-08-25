@@ -1,21 +1,22 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import Photos from "./pages/Photos";
-import Styles from "./styles.css";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<Photos />}></Route>
-        <Route path="/cart" element={<Cart />}></Route>
-      </Routes>
-      <Footer />
-    </div>
+    <>
+      <div>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Login />}></Route>
+          <Route exact path="/images" element={<Photos />}></Route>
+          <Route path="/cart" element={<Cart />}></Route>
+        </Routes>
+      </div>
+    </>
   );
 }
 
