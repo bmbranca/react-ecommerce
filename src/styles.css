@@ -157,7 +157,11 @@ main.photos {
 }
 
 main.cart-page {
-  padding: 10px;
+  padding: 0 17em;
+}
+
+.cart-item-wrapper {
+  border: 1px solid green;
 }
 
 .cart-page > h1 {
@@ -194,6 +198,8 @@ div.order-button > button:disabled {
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cart-item img {
